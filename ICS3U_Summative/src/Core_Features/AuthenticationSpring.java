@@ -16,10 +16,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
 @EnableWebSecurity
-public class Authentication extends WebSecurityConfigurerAdapter {
+public class AuthenticationSpring extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    private UserRepository userRepository;
+    private UserRepository userRepository; //get from db
 
     @Bean
     public PasswordEncoder passwordEncoder() {
