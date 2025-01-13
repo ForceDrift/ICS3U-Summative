@@ -10,7 +10,7 @@ public class AuthenticationJava {
         users.put("user1", "password1"); 
         users.put("user2", "password2"); 
     }
-
+    //authentication function using a hashmap similar to a database lookup (LSM-tree)
     public static boolean authenticate(String username, String password) {
         if (users.containsKey(username) && users.get(username).equals(password)) {
             return true; // Authentication successful
@@ -22,7 +22,7 @@ public class AuthenticationJava {
     public static void main(String[] args) {
         String username = "user1";
         String password = "password1";
-
+        
         if (authenticate(username, password)) {
             System.out.println("Authentication successful!");
         } else {
