@@ -19,7 +19,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 public class Authentication extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    private UserRepository userRepository;
+    private UserRepository userRepository; //get from db
 
     @Bean
     public PasswordEncoder passwordEncoder() {
