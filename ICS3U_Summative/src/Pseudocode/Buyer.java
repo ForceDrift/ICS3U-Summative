@@ -7,7 +7,7 @@ public class Buyer extends User {
     private List<Transaction> transactions;
 
     public Buyer(String userId) {
-        super(userId, "buyer");
+        super(userId, "buyer", userId, userId);
         this.transactions = new ArrayList<>();
     }
 

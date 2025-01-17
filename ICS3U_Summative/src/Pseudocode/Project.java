@@ -38,4 +38,13 @@ public class Project {
         this.description = description;
     }
 
+    public String getProjectId() {
+        return projectId;
+    }
+
+    public String getBuyerId() {
+        return buyerId;
+    }
+
+
 }

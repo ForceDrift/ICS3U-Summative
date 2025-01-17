@@ -8,7 +8,7 @@ public class Contractor extends User {
     private List<Transaction> transactions;
 
     public Contractor(String userId) {
-        super(userId, "contractor");
+        super(userId, "contractor", userId, userId);
         this.skills = new ArrayList<>();
         this.transactions = new ArrayList<>();
     }
