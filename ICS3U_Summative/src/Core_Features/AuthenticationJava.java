@@ -6,7 +6,7 @@ public class AuthenticationJava {
     private static final Map<String, String> users = new HashMap<>(); 
 
     static {
-        // Sample user data (replace with proper database access)
+        // sample user data (replace with proper database access)
         users.put("user1", "password1"); 
         users.put("user2", "password2"); 
     }
@@ -20,8 +20,10 @@ public class AuthenticationJava {
     }
 
     public static void main(String[] args) {
+        //put in a sample input
         String username = "user1";
         String password = "password1";
+        
         
         if (authenticate(username, password)) {
             System.out.println("Authentication successful!");
